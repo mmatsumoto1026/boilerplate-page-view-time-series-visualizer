@@ -98,6 +98,8 @@ def draw_box_plot():
         x=df_box['year'], 
         y=df_box['value'], 
         ax=axes[0],
+        hue=df_box['year'], 
+        legend=False,
         fliersize=3, 
         flierprops={'marker': 'd', 'markerfacecolor':'k'},
         palette=sns.color_palette(n_colors=4)
